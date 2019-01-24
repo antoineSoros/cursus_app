@@ -66,4 +66,12 @@ array_push($this->modules,$module);
 
     }
 
+    public function toArray():array {
+        return [
+            'idCursus'=>$this->id,
+            'titre' => $this->titre,
+            'niveau'=> $this->niveau,
+            'modules'=> $this ->modules
+        ];
+    }
 }

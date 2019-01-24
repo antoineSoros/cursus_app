@@ -66,4 +66,16 @@ class Module
     }
 
 
+    public function toArray():array {
+        return [
+            'idModule'=>$this->id,
+            'intitule' => $this->intitule,
+            'heures'=> $this->heures,
+            'description'=>$this->description
+
+        ];
+    }
+
+
+
 }
